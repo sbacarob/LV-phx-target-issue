@@ -1,0 +1,6 @@
+<section>
+  <div id="parent-div">
+    <p><%= @text %></p>
+    <%= live_component(@socket, MultiPhxTargetWeb.ComponentLive, id: :child_component, component_text: "") %>
+  </div>
+</section>
